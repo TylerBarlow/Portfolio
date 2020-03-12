@@ -1,0 +1,267 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin-bottom: 0;
+}
+
+/*Not used yet*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background-color: #333;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 1rem 1rem 0 1rem;
+    padding: 0;
+    color: #282e32;
+}
+
+h1,
+h2,
+h3,
+h4 {}
+
+p {
+    font-family: 'Hind', Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.main-container {
+    background-color: #eee;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+/*------Start Header------*/
+.header {
+    background-color: #546a7b;
+    /*Steel blue*/
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    color: #FDFDFF;
+    /*Off white*/
+}
+
+/*------End Header------*/
+
+
+/*------Start Text------*/
+.text-styleguide {}
+
+/*------End Text------*/
+
+
+/*------Start Color Palette------*/
+.color-styleguide {
+    margin-top: 3rem;
+}
+
+.color-palette {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.color-palette div:first-of-type {
+    /*First of Type : https://www.w3.org/TR/selectors-3/#first-of-type-pseudo*/
+    margin-left: 2rem;
+}
+
+.color-palette div:last-of-type {
+    margin-right: 2rem;
+}
+
+.swatch1,
+.swatch2,
+.swatch3,
+.swatch4 {
+    width: 20%;
+    height: 5rem;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-palette h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.swatch1 {
+    background-color: #62929E;
+    outline: 4px solid #62929E;
+    outline-offset: 10px;
+    /*Offset Outline : https://www.w3schools.com/cssref/css3_pr_outline-offset.asp*/
+}
+
+.swatch2 {
+    background-color: #546A7B;
+    outline: 4px solid #546A7B;
+    outline-offset: 10px;
+}
+
+.swatch3 {
+    background-color: #C6C5B9;
+    outline: 4px solid #C6C5B9;
+    outline-offset: 10px;
+}
+
+.swatch4 {
+    background-color: #282e32;
+    outline: 4px solid #282e32;
+    outline-offset: 10px;
+}
+
+/*------End Color Palette------*/
+
+/*------Start Elements-------*/
+.elements-styleguide {
+    margin-top: 3rem;
+}
+
+.elements-styleguide h2 {
+    margin-top: 2rem;
+}
+
+.buttons {
+    display: flex;
+}
+
+.primary-btn,
+.secondary-btn,
+.tertiary-btn {
+    display: inline-block;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    background-color: #62929E;
+    border: 2px solid #62929E;
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+
+    text-decoration: none;
+    color: white;
+
+    transition: color ease-in 0.4s;
+    transition: background-color linear 0.2s;
+}
+
+.primary-btn:hover {
+    color: #62929E;
+    background-color: transparent;
+}
+
+.secondary-btn {
+    background-color: #546A7B;
+    border: 2px solid #546A7B;
+}
+
+.secondary-btn:hover {
+    color: #546A7B;
+    background-color: transparent;
+}
+
+.tertiary-btn {
+    background-color: #C6C5B9;
+    border: 2px solid #C6C5B9;
+}
+
+.tertiary-btn:hover {
+    color: #393D3F;
+    background-color: transparent;
+}
+
+/*------Expanding Frame------*/
+.expandingFrame {
+    position: relative;
+    height: 400px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.frame {
+    position: absolute;
+
+    background-color: #EEEEEE;
+    width: 200px;
+    height: 300px;
+
+    transition: left linear 0.2s, top linear 0.2s;
+    /*Multiple transtions https://css-tricks.com/almanac/properties/t/transition/*/
+}
+
+.expandingFrame div:nth-child(4n) {
+    border: 5px solid #393D3F ;
+    top: 0px;
+    left: 0px;
+}
+
+.expandingFrame div:nth-child(4n+1) {
+    border: 5px solid #546A7B;
+    top: 0px;
+    left: 0px;
+}
+
+.expandingFrame div:nth-child(4n+2) {
+    border: 5px solid #C6C5B9;
+    left: 0px;
+    top: 0px;
+}
+
+.expandingFrame div:nth-child(4n+3) {
+    border: 5px solid #62929E;
+    left: 0px;
+    top: 0px;
+}
+
+
+/*------End Elements-------*/
