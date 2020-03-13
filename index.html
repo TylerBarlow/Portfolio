@@ -4,7 +4,7 @@
 <head>
     <title>Portfolio { Tyler Barlow }</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Hind|Lato:300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Hind&family=Lato:wght@300&display=swap" rel="stylesheet">
 
     <link type=text/css href="css/normalizeV8.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -15,21 +15,28 @@
 
 <body>
     <div class="header">
-        <div class="top-item">
-            <h4>Tyler Barlow <span>Portfolio</span></h4>
-            <h4>Student <span>Simon Fraser University</span></h4>
-            <h4>Designer <span>UX/UI_HTML_Java</span></h4>
-            <h4>Updated <span>March 2020</span></h4>
-        </div>
+        <nav>
+            <a href="#" class="nav-left">
+                <h1 class="name-text">Tyler Barlow</h1>
+                <h2 href="#" class="portfolio-text">Portfolio</h2>
+            </a>
+            <div class="nav-right">
+                <a href="project.html">PROJECTS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
     </div>
     <div class="main-container">
-        <div class="about">
-            <h1>Who is this</h1>
-            <p>My name is Tyler. I'm a student expanding my knowledge at Simon Fraser University in Vancouver. I don't believe in pixel-perfect design. I believe pixel perfection is not attainable nor useful. I aim to use iteration and metrics to continuously (and relentlessly) move towards a better experience. I enjoy my work most when I'm pushed to rapidly learn new tools, perspectives and methods to move forward. Thus far, my education has exposed me to skills in web development, Arduino, processing, UX and UI design. I'm excited to show you what I have done, and I'm excited to add more.</p>
-        </div>
+        <section class="about">
+            <div>
+                <h1>Hello,</h1>
+                <h2>I'm a student studying interactive technology in Vancouver.</h2>
+            </div>
+            <a href="about.html" class="secondary-btn">More about me </a>
+        </section>
 
-        <h1>Projects</h1>
-        <div class="projects">
+        <section class="projects">
             <div>
                 <div class="expandingFrame">
                     <div class="frame" onmouseover="expandFrame(0);" onmouseleave="contractFrame(0);">
@@ -38,84 +45,61 @@
                     </div>
                     <div class="frame" onmouseover="expandFrame(0);" onmouseleave="contractFrame(0);">
                     </div>
-                    <div class="frame" onmouseover="expandFrame(0);" onmouseleave="contractFrame(0);">
-                        <img src="https://via.placeholder.com/296">
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="expandingFrame">
-                    <div class="frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
-                        <img src="https://via.placeholder.com/296">
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <div class="expandingFrame">
-                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
-                        <img src="https://via.placeholder.com/296">
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="projects">
-            <div>
-                <div class="expandingFrame">
-                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
-                        <img src="https://via.placeholder.com/296">
+                    <div class="frame top-frame" onmouseover="expandFrame(0);" onmouseleave="contractFrame(0);">
+                        <div class="project-card-left">
+                            <h1>Mekanikaru</h1>
+                            <p>An interactive two player communication game.</p>
+                            <a href="mek.html" class="secondary-btn">More about this</a>
+                        </div>
+                        <div class="project-card-right">
+                            <img src="images/mekTestImg.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div>
                 <div class="expandingFrame">
-                    <div class="frame" onmouseover="expandFrame(4);" onmouseleave="contractFrame(4);">
+                    <div class="frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
                     </div>
-                    <div class="frame" onmouseover="expandFrame(4);" onmouseleave="contractFrame(4);">
+                    <div class="frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
                     </div>
-                    <div class="frame" onmouseover="expandFrame(4);" onmouseleave="contractFrame(4);">
+                    <div class="frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
                     </div>
-                    <div class="frame" onmouseover="expandFrame(4);" onmouseleave="contractFrame(4);">
-                        <img src="https://via.placeholder.com/296">
+                    <div class="frame top-frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
+                        <img src="https://via.placeholder.com/859x296">
                     </div>
                 </div>
             </div>
-            
+
             <div>
                 <div class="expandingFrame">
-                    <div class="frame" onmouseover="expandFrame(5);" onmouseleave="contractFrame(5);">
+                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
                     </div>
-                    <div class="frame" onmouseover="expandFrame(5);" onmouseleave="contractFrame(5);">
+                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
                     </div>
-                    <div class="frame" onmouseover="expandFrame(5);" onmouseleave="contractFrame(5);">
+                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
                     </div>
-                    <div class="frame" onmouseover="expandFrame(5);" onmouseleave="contractFrame(5);">
-                        <img src="https://via.placeholder.com/296">
+                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
+                        <img src="https://via.placeholder.com/859x296">
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div>
+                <div class="expandingFrame">
+                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
+                    </div>
+                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
+                    </div>
+                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
+                    </div>
+                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
+                        <img src="https://via.placeholder.com/859x296">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <div class="footer">

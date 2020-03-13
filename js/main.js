@@ -1,4 +1,4 @@
-var frameExpandWidth = 8 /*In px*/
+var frameExpandWidth = 4 /*In px*/
 var numPerFrame = 4;
 
 function expandFrame(frameNum){
