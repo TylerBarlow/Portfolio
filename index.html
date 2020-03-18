@@ -4,7 +4,7 @@
 <head>
     <title>Portfolio { Tyler Barlow }</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Hind&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Hind:wght@300&family=Lato:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
 
     <link type=text/css href="css/normalizeV8.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -21,7 +21,7 @@
                 <h2 href="#" class="portfolio-text">Portfolio</h2>
             </a>
             <div class="nav-right">
-                <a href="project.html">PROJECTS</a>
+                <a href="#projectID">PROJECTS</a>
                 <a href="about.html">ABOUT</a>
                 <a href="contact.html">CONTACT</a>
             </div>
@@ -31,12 +31,12 @@
         <section class="about">
             <div>
                 <h1>Hello,</h1>
-                <h2>I'm a student studying interactive technology in Vancouver.</h2>
+                <h5>I'm a student studying interactive technology in Vancouver.</h5>
             </div>
-            <a href="about.html" class="secondary-btn">More about me </a>
+            <a href="about.html" class="secondary-btn">more about me</a>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projectsID">
             <div>
                 <div class="expandingFrame">
                     <div class="frame" onmouseover="expandFrame(0);" onmouseleave="contractFrame(0);">
@@ -47,12 +47,12 @@
                     </div>
                     <div class="frame top-frame" onmouseover="expandFrame(0);" onmouseleave="contractFrame(0);">
                         <div class="project-card-left">
-                            <h1>Mekanikaru</h1>
+                            <h2>Mekanikaru</h2>
                             <p>An interactive two player communication game.</p>
-                            <a href="mek.html" class="secondary-btn">More about this</a>
+                            <a href="mekanikaru.html" class="secondary-btn">more about this</a>
                         </div>
                         <div class="project-card-right">
-                            <img src="images/mekTestImg.jpg">
+                            <img src="images/MekHome.jpg">
                         </div>
                     </div>
                 </div>
@@ -67,35 +67,14 @@
                     <div class="frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
                     </div>
                     <div class="frame top-frame" onmouseover="expandFrame(1);" onmouseleave="contractFrame(1);">
-                        <img src="https://via.placeholder.com/859x296">
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="expandingFrame">
-                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(2);" onmouseleave="contractFrame(2);">
-                        <img src="https://via.placeholder.com/859x296">
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="expandingFrame">
-                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
-                    </div>
-                    <div class="frame" onmouseover="expandFrame(3);" onmouseleave="contractFrame(3);">
-                        <img src="https://via.placeholder.com/859x296">
+                        <div class="project-card-left">
+                            <h2>RunGo Feature</h2>
+                            <p>An feature design for a running app.</p>
+                            <a href="runGo.html" class="secondary-btn">more about this</a>
+                        </div>
+                        <div class="project-card-right">
+                            <img src="images/RunGoHome.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,6 +82,6 @@
     </div>
 
     <div class="footer">
-        <h3></h3>
+        <h3>Tyler Barlow</h3>
     </div>
 </body>

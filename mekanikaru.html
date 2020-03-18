@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Portfolio { Tyler Barlow }</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Hind:wght@300&family=Lato:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link type=text/css href="css/normalizeV8.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html" class="nav-left">
+                <h1 class="name-text">Tyler Barlow</h1>
+                <h2 class="portfolio-text">Portfolio</h2>
+            </a>
+            <div class="nav-right">
+                <a href="project.html">PROJECTS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="hero">
+        <img src="images/Mek/Hero.png" width=1680 height=446>
+        <div class="hero-text">
+            <h1>Mekanikaru</h1>
+            <h5>A cooperative two player communication test</h5>
+        </div>
+    </div>
+
+    <div class="sub-hero">
+        <div class="sub-hero-content">
+            <div class="left">
+                <div class="top">
+                    <h4>My Role</h4>
+                    <p>Concept design</p>
+                    <p>Programming</p>
+                </div>
+            </div>
+
+            <div class="center">
+                <h4>Team</h4>
+                <p>Aliasger Rasheed</p>
+                <p>Pradeesh Motha</p>
+                <p>Rhees Kennedy</p>
+                <p>Tyler Barlow</p>
+            </div>
+
+            <div class="right">
+                <h4>Summary</h4>
+                <p>The idea which eventually became Mekanikaru started as a desire to create a cooperative, interactive experience that put one user in charge of relaying instructions, and another in charge of physical inputs. The result was a robot fight theamed game, with one user viewing a screen and the other interfacing with a control panel.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-container">
+        <div class="small-content-column">
+            <section class="constraints">
+                <h3>Constraints</h3>
+                <p>The project was required to make use of: an Arduino, an interface with processing on a computer and at least 3 different sensors. Interaction needed to consist of: input, output, and a GUI. The goal was to create an interactive system.</p>
+            </section>
+
+            <section class="inspiration">
+                <h3>Inspiration</h3>
+                <p>We set out to design an interactive game that was sufficiently complex enough to warrant using 4 Arduino micro-controllers. We took inspiration from the video game "Keep talking and no one explodes". Our goal was to create a physical variation of the game's virtual interface. </p>
+                <img src="images/Mek/KeepTalking.png">
+            </section>
+        </div>
+
+        <section class="concept">
+            <div class="small-content-column">
+                <h3>Concept</h3>
+                <p>Our solution was to design and implement 4 different physical "modules" that would make up 4 stages of the game. Each of these modules would be a self contained mini-game, requiring communication with the second player to complete.</p>
+            </div>
+            <div class="multiple-images">
+                <img src="images/Mek/Concept1.png">
+                <img src="images/Mek/Concept2.png">
+            </div>
+        </section>
+
+        <section class="programming">
+            <div class="small-content-column">
+                <h3>Programming</h3>
+                <p>The microcontroller was programmed in Wiring; a Java based language for coding Arduino, and the computer side in Processing. Difficulties arose in controlling a large number of input/output pins, and in controlling 4 Arduinos simultaneously.</p>
+            </div>
+            <div class="multiple-images">
+                <img src="images/Mek/Programming1.png">
+                <img src="images/Mek/Programming2.png">
+            </div>
+            <div class="small-content-column">
+                <p>The constrained number of pins useable on the Ardiuno board meant some creative soultions were needed. The jack module required 35 different possible detections. A to 1, A to 2... B to 1, B to 2 ect. The solution was to power each cord briefly, and check for input on each of the 7 inputs. This reduced the number of connections needed to 13.</p>
+            </div>
+        </section>
+
+        <div class="small-content-column">
+            <section class="prototyping">
+                <h3>Prototyping</h3>
+                <p>Our solution was to design and implement 4 different physical "modules" that would make up 4 stages of the game. Each of these modules would be a self contained mini-game, requiring communication with the second player to complete.</p>
+                <img src="images/Mek/Prototyping.png">
+            </section>
+
+            <section class="physicalModel">
+                <h3>Physical Model</h3>
+                <p>After prototyping was complete and we knew the idea was feasable, the physical model was constructed. All 4 modules were placed on the same surface slanted forward, similar to a machine control panel. This was chosen after we decided on a theam of fighting robots, the control panel look was to match the concept. The box and panels were hand cut out of plywood and MDF.</p>
+                <img src="images/Mek/PhysicalModel1.png">
+                <p>Keeping with our modular system, each panel was built seperatly and slotted into holes in the main box. This made it possible to wire it up outside of the box, and remove a panel for easy troubleshooting.</p>
+                <div class="column-images">
+                    <img src="images/Mek/PhysicalModel2.png">
+                </div>
+                <p>Care was taken to ensure each component of each module was well defined, and had a planned location of installation.</p>
+                <p>This was important to prevent errors and confusion, as roughly 40 different components were to be connected inside the box.</p>
+            </section>
+
+            <section class="allTogether">
+                <h3>All Together</h3>
+                <img src="images/Mek/AllTogether1.png">
+                <p>Once all the modules were constructed and put in place, the system was plugged in for testing.</p>
+                <img src="images/Mek/AllTogether2.png">
+                <p>Pictured is the visual output viewed by the user relaying the information. Each sub-screen corresponds with one of the physical modules.</p>
+                <img src="images/Mek/AllTogether3.png">
+                <p>Testing the interface.</p>
+            </section>
+
+            <section class="finalThoughts">
+                <h3>Final Thoughts</h3>
+                <p>This team worked very well together and we were able to accomplish a lot in a short amount of time. Navigating complex electronic wiring, some light carpentry, Ardiuno and Processing programing, while at the same time trying to balance a games mechanics and difficulty was a multidisciplinary challange. The final product was successful and went beyond what was expected of the project.</p>
+            </section>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h3>Tyler Barlow</h3>
+    </div>
+</body>
+
+</html>

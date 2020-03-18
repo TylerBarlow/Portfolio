@@ -18,7 +18,8 @@
 body {
 /*    background-color: #EEEEEE;*/
 /*    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,239,245,1) 100%);*/
-    background: linear-gradient(180deg, #f4f6fe 0%, #e8e8ee 100%);
+    background: linear-gradient(180deg, #fff 0%, #f0f4fa 100%);
+    background-repeat: no-repeat;
     font-family: 'Lato', Helvetica, sans-serif;
     
     -webkit-font-smoothing: antialiased;
@@ -28,203 +29,63 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p {
     margin: 1rem 1rem 0 1rem;
     padding: 0;
     color: #282e32;
 }
 
-h1,
-h2,
-h3,
-h4 {}
-
 p {
     font-family: 'Hind', Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 2;
+    font-size: 1rem; /*16px*/
 }
 
 h1 {
     font-family: 'Barlow', Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 5rem; /*80px*/
     font-weight: 700;
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 300;
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-size: 3rem; /*48px*/
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1.875rem; /*30px*/
     font-weight: 700;
 }
 
-/*------Top labels------*/
 h4 {
+    font-family: 'Lato', Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.25rem; /*20px*/
     margin: 0;
 }
 
+h5 {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem; /*20px*/
+}
+
+/*------Start Elements-------*/
 .main-container {
-    width: 60%;
+    width: 980px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 5rem;
+    padding-top: 3rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
 }
-
-/*------Start Header------*/
-.header {
-    position:fixed;
-    background-color: #f4f6fe;
-    z-index: 999;
-    
-    width:100%;
-    margin: 0;
-    padding: 0;
-    padding-top: 1rem;
-    
-/*    border-bottom: 1px solid;*/
-}
-
-nav {
-    width: 60%;
-    margin: 0 auto;
-    
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-left {
-/*    border: 2px solid #3F8B9E;*/
-    padding: 0.5rem 0.2rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
-    transition: background-color 0.1s ease-in;
-}
-
-.nav-left .name-text {
-    font-family: 'Barlow', Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    
-    margin-bottom: 0;
-    margin-top: 0;
-    
-    transition: color 0.1s ease-in;
-}
-
-.nav-left .portfolio-text {
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    
-    margin-top: 0;
-    margin-bottom: 0;
-    
-    transition: color 0.1s ease-in;
-}
-
-.nav-left:hover {
-    background-color: #3F8B9E;
-}
-
-.nav-left:hover h1 {
-    color:white;
-}
-
-.nav-left:hover h2 {
-    color:white;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-}
-
-.nav-right a {
-    margin:1rem;
-}
-
-
-nav a {   
-    text-decoration: none;
-    color: #282e32;
-}
-
-nav a:hover {
-    color:#3F8B9E;
-}
-
-
-
-/*------End Header------*/
-
-
-/*------Start About------*/
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    margin-top: 2rem;
-}
-
-.about h1 {
-    font-size: 5rem;
-}
-
-.about h2 {
-    margin-top: 0;
-}
-
-.about p {
-
-}
-
-.about-text {
-    display: flex;
-    align-items: center;
-}
-
-.about-button {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-/*------End About------*/
-
-
-/*------Start Projects-------*/
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    margin-top: 6rem;
-}
-
-/*
-.projects a {
-    width: 100%;
-}
-*/
-
-/*------End Projects-------*/
-
-
-/*------Start Elements-------*/
 
 /*----Project Card----*/
 .top-frame {
@@ -260,12 +121,12 @@ nav a:hover {
 .tertiary-btn {
     display: inline-block;
 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
 
     margin-top: 2.5rem;
     margin-left: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.2rem;
 
     text-decoration: none;
     color: white;
@@ -354,17 +215,263 @@ nav a:hover {
     top: 0px;
 }
 
-/*More expanding frame for about*/
-/*
-about-expandingFrame {
-    margin-top: 10rem;
-    position: relative;
-    width: 100%;
-    height: 300px;
-    margin: 2rem 0;
+/*------Start Top Nav------*/
+.header {
+    position:fixed;
+    background-color: #fff;
+    z-index: 999;
+    
+    width:100%;
+    margin: 0;
     padding: 0;
+    padding-top: 1rem;
+    
+/*    border-bottom: 1px solid;*/
+}
+
+nav {
+    width: 980px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right a:last-child {
+    margin-right: 0;
+}
+
+.nav-left {
+/*    border: 2px solid #3F8B9E;*/
+    padding: 0.5rem 0.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    transition: background-color 0.1s ease-in;
+}
+
+.nav-left .name-text {
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    
+    margin-bottom: 0;
+    margin-top: 0;
+    
+    transition: color 0.1s ease-in;
+}
+
+.nav-left .portfolio-text {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    transition: color 0.1s ease-in;
+}
+
+.nav-left:hover {
+    background-color: #3F8B9E;
+}
+
+.nav-left:hover h1 {
+    color:white;
+}
+
+.nav-left:hover h2 {
+    color:white;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    margin:1rem;
+}
+
+
+nav a {   
+    text-decoration: none;
+    color: #282e32;
+}
+
+nav a:hover {
+    color:#3F8B9E;
+}
+
+
+
+/*------End Top Nav------*/
+
+/*------Start About On Home Page------*/
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    margin-top: 6rem;
+    padding-top: 3rem;
+}
+
+.about h5 {
+    margin-top: 0;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+}
+
+.about-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*------End About------*/
+
+/*------Start Projects Page------*/
+
+.hero {
+    padding-top: 6.375rem; /*Height of the top nav*/
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    left: 19rem;
+    top: 10rem;
+    
+    background: rgba(0,0,0,0.4)
+}
+
+.hero-text h1, .hero-text h5 {
+    color: white;
+    margin-top: 0;
+    line-height: 3.2rem;
+}
+
+.hero-text h1 {
+    padding-top: 1rem;
+}
+
+.hero-text h5 {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+}
+
+.sub-hero {
+    background: #000;
+    padding: 2rem 0;
+}
+
+.sub-hero-content {
+    width: 980px;
+    margin: 0 auto;
+    
+    display: flex;
+}
+
+.sub-hero .left {
+    flex: 1;
+}
+
+.sub-hero .center {
+    flex: 1;
+    height: auto;
+}
+
+.sub-hero .right {
+    flex: 2;
+}
+
+.sub-hero .center, .sub-hero .right, .sub-hero .left {
+    border-left: 3px solid white;
+    padding-left: 0.5rem;
+}
+
+.sub-hero h4, .sub-hero p {
+    color: white;
+    line-height: 1.2rem;
+}
+
+.sub-hero p {
+    font-size: 0.875rem;
+    margin-left: 0;
+    margin-top: 0.5rem;
+}
+
+.sub-hero h4 {
+    padding-bottom: 0.7rem;
+}
+
+/*In Main Container*/
+.small-content-column {
+    width:70%;
+    margin: 0 auto;
+}
+
+.main-container section {
+    padding: 1.5rem 0;
+}
+
+section img {
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.multiple-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+/* Trying to make a grey background for one section span the full page
+.grey-background {
+    width: 100vw;
+    background-color: #F3F3F5;
 }
 */
+
+
+
+/*------End Projects Page------*/
+
+
+
+
+/*------Start Projects Card-------*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin-top: 6rem;
+}
+
+
+/*------End Projects Card-------*/
+
+/*------Start About Page------*/
+
+.about-page {
+    margin-top: 4rem;
+}
+
 
 
 /*------End Elements-------*/
@@ -373,6 +480,8 @@ about-expandingFrame {
 .footer {
     display: flex;
     align-items: center;
+    
+    margin-top: 5rem;
     
     padding-left: 20%;
     
